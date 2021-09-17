@@ -17,9 +17,12 @@
 # Module variables definition starts here
 
 variable "apikey" {
-    type    = string
+  type      = string
+  default   = ""
+  sensitive = true
 }
 
-variable "secretkey" {
-    type    = string
+variable "secretkeyfile" {
+  type    = string
+  default = "../../intersight.pem"
 }

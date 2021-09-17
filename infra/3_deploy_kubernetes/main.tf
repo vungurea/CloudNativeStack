@@ -13,9 +13,9 @@
 # IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
 # or implied.
 
-# Declare required provider
+
 provider "intersight" {
     apikey    = var.apikey
-    secretkey = var.secretkey
+    secretkey = var.secretkeyfile
     endpoint  = "intersight.com"
 }

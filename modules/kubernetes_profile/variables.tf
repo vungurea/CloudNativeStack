@@ -102,6 +102,7 @@ variable "unsigned_registries" {
 
 variable "infra_target" {
   type = map(any)
+  sensitive = true
 }
 
 variable "infra_target_portgroup" {
@@ -122,7 +123,7 @@ variable "controlplane_max_size" {
 
 variable "controlplane_min_size" {
   type = number
-  default = 0
+  default = 1
 }
 
 variable "worker_desired_size" {
@@ -135,6 +136,6 @@ variable "worker_max_size" {
 
 variable "worker_min_size" {
   type = number
-  default = 0
+  default = 1
 }
 
